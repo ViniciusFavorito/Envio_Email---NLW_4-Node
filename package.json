@@ -7,12 +7,19 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+    "test": "set NODE_ENV=test jest"
+    
   },
   "dependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/supertest": "^2.0.11",
     "express": "^4.17.1",
+    "jest": "^27.0.6",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
+    "supertest": "^6.1.4",
+    "ts-jest": "^27.0.4",
     "typeorm": "^0.2.34",
     "uuid": "^8.3.2"
   },
